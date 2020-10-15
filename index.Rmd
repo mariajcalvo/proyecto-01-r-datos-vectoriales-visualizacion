@@ -1,6 +1,6 @@
 ---
 title: "PF-0953 Programación geoespacial en R<br>Proyecto 01: R - Visualización de datos vectoriales"
-author: "Manuel Vargas"
+author: "María José Calvo Sandí"
 date: "2020-10-07"
 output:
   html_document:
@@ -65,10 +65,7 @@ NOTA: recuerde que también puede explorar los datos con funciones como ```str()
 ### Ejercicio 2 (5%)
 Mediante la función [kable()](https://www.rdocumentation.org/packages/knitr/versions/1.30/topics/kable) del paquete [knitr](https://cran.r-project.org/web/packages/knitr/), despliegue en una tabla las diez primeras observaciones (i.e. filas, registros) y las cinco primeras variables (i.e. columnas) del data frame  ```world```.
 ```{r}
-kable(
-  world[1:10, 1:5, drop = TRUE], 
-  caption="Datos demográficos de los países del mundo"
-)
+ 
 ```
 Note el uso del parámetro ```drop=TRUE```, para evitar el despliegue de la tabla de geometrías.
 
