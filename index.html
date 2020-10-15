@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Manuel Vargas" />
+<meta name="author" content="María José Calvo Sandí" />
 
 <meta name="date" content="2020-10-07" />
 
@@ -1724,7 +1724,7 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">PF-0953 Programación geoespacial en R<br>Proyecto 01: R - Visualización de datos vectoriales</h1>
-<h4 class="author">Manuel Vargas</h4>
+<h4 class="author">María José Calvo Sandí</h4>
 <h4 class="date">2020-10-07</h4>
 
 </div>
@@ -1785,206 +1785,6 @@ library(spData)</code></pre>
 <div id="ejercicio-2-5" class="section level3">
 <h3>Ejercicio 2 (5%)</h3>
 <p>Mediante la función <a href="https://www.rdocumentation.org/packages/knitr/versions/1.30/topics/kable">kable()</a> del paquete <a href="https://cran.r-project.org/web/packages/knitr/">knitr</a>, despliegue en una tabla las diez primeras observaciones (i.e. filas, registros) y las cinco primeras variables (i.e. columnas) del data frame <code>world</code>.</p>
-<pre class="r"><code>kable(
-  world[1:10, 1:5, drop = TRUE], 
-  caption=&quot;Datos demográficos de los países del mundo&quot;
-)</code></pre>
-<table>
-<caption>
-Datos demográficos de los países del mundo
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-iso_a2
-</th>
-<th style="text-align:left;">
-name_long
-</th>
-<th style="text-align:left;">
-continent
-</th>
-<th style="text-align:left;">
-region_un
-</th>
-<th style="text-align:left;">
-subregion
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-FJ
-</td>
-<td style="text-align:left;">
-Fiji
-</td>
-<td style="text-align:left;">
-Oceania
-</td>
-<td style="text-align:left;">
-Oceania
-</td>
-<td style="text-align:left;">
-Melanesia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-TZ
-</td>
-<td style="text-align:left;">
-Tanzania
-</td>
-<td style="text-align:left;">
-Africa
-</td>
-<td style="text-align:left;">
-Africa
-</td>
-<td style="text-align:left;">
-Eastern Africa
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-EH
-</td>
-<td style="text-align:left;">
-Western Sahara
-</td>
-<td style="text-align:left;">
-Africa
-</td>
-<td style="text-align:left;">
-Africa
-</td>
-<td style="text-align:left;">
-Northern Africa
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-CA
-</td>
-<td style="text-align:left;">
-Canada
-</td>
-<td style="text-align:left;">
-North America
-</td>
-<td style="text-align:left;">
-Americas
-</td>
-<td style="text-align:left;">
-Northern America
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-US
-</td>
-<td style="text-align:left;">
-United States
-</td>
-<td style="text-align:left;">
-North America
-</td>
-<td style="text-align:left;">
-Americas
-</td>
-<td style="text-align:left;">
-Northern America
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-KZ
-</td>
-<td style="text-align:left;">
-Kazakhstan
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-Central Asia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-UZ
-</td>
-<td style="text-align:left;">
-Uzbekistan
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-Central Asia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-PG
-</td>
-<td style="text-align:left;">
-Papua New Guinea
-</td>
-<td style="text-align:left;">
-Oceania
-</td>
-<td style="text-align:left;">
-Oceania
-</td>
-<td style="text-align:left;">
-Melanesia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ID
-</td>
-<td style="text-align:left;">
-Indonesia
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-Asia
-</td>
-<td style="text-align:left;">
-South-Eastern Asia
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-AR
-</td>
-<td style="text-align:left;">
-Argentina
-</td>
-<td style="text-align:left;">
-South America
-</td>
-<td style="text-align:left;">
-Americas
-</td>
-<td style="text-align:left;">
-South America
-</td>
-</tr>
-</tbody>
-</table>
 <p>Note el uso del parámetro <code>drop=TRUE</code>, para evitar el despliegue de la tabla de geometrías.</p>
 </div>
 <div id="ejercicio-3-5" class="section level3">
